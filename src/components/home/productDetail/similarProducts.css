@@ -1,0 +1,5 @@
+.container_similar_products{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: flex-end;
+}

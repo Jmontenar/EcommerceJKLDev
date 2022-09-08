@@ -1,0 +1,16 @@
+.cart{
+    display:flex;
+    align-items: center;
+}
+.cart__btn{
+    cursor: pointer;
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #f8c031;
+}
