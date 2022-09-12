@@ -16,11 +16,11 @@ const ProductCartInfo = ({product, getAllProductsCard}) => {
     <article className="cart__item">
         <header className="cart__item-header">
         <h4 className="cart__category">{product.brand}</h4>
-        <h3 className="cart__name">{product.tittle}</h3>
+        <h3 className="cart__name">{product.title}</h3>
         </header>
         <div onClick={handdleDeleteProduct} className="cart__trash"><i className="fa-regular fa-trash-can"></i></div>
         <div>
-            <span className="cart__total-label">Total:  </span>
+            <span className="cart__total-label">Price:  </span>
         <span className="cart__quantity">{product.productsInCart.quantity}</span>
             <p className="cart__total-number">{product.price}</p>
         </div>

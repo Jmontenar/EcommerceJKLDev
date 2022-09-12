@@ -13,15 +13,15 @@ const ProductDescription = ({productInfo}) => {
         }
     }
 
-const handleAddCart = () => {
-    const URL = 'https://ecommerce-api-react-.herokuapp.com/api/v1/cart'
+const handleAddCart = () =>{
+    const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/cart'
     const obj = {
-        id: productInfo.id,
-        quantity: counter
+            id: productInfo.id,
+            quantity: counter
     }
     axios.post(URL, obj, getConfig())
-    .then(res => console.log(res.data))
-    .catch(err => console.log(err))
+    .then(res =>console.log(res.data))
+    .catch(err =>console.log(err))
 }
 
   return (
@@ -43,7 +43,7 @@ const handleAddCart = () => {
                     <button onClick={handlePlus}>+</button>
                 </div>
             </article>
-                <div onClick={handleAddCart} className="product-info_add"><h4>Add to cart</h4><i className="fa-solid fa-cart-shopping"></i></div>
+                <button onClick={handleAddCart} className="product-info_add">Add to cart<i className="fa-solid fa-cart-shopping"></i></button>
         </div>
     </section>
     </div>

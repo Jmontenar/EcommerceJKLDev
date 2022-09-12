@@ -17,6 +17,7 @@ const SimilarProducts = ({productInfo}) => {
 
   return (
     <div className="container_similar_products">
+      <h3>Discover Similar Products</h3>
         {
             filterProducts?.map(product =>{
                 if(product.title !== productInfo.title){

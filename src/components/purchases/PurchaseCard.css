@@ -1,0 +1,11 @@
+.card_purchase{
+    border: solid;
+    display:flex
+}
+.card_purchase_date{
+    font-size: 15px;
+}
+.card_purchase_body{
+    list-style: none;
+    font-size: 15px;
+}
