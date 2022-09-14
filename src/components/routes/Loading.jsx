@@ -14,7 +14,7 @@ const Loading = () => {
     </div>
     <div className="loading">
       <div>
-        <h1>Loading</h1>
+        <h1>E-commerce is Loading</h1>
         <p>...</p>
       </div>
     </div>

@@ -1,10 +1,11 @@
-.home{
-    margin-top: 85px;
-}
 .home__container-card{
     display: flex;
     flex-wrap: wrap;  
-    justify-content: flex-end;
-    
+    justify-content: flex-end; 
+    gap: -20px;
+    position: relative;
+    margin-top: -190px;
+
 }
+
 

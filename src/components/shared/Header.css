@@ -1,4 +1,119 @@
-.header{
+.header {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    box-shadow: 2px 1px 2px #ffc753;  
+    background-color: #1c0030;
+}
+.header__logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF7431;
+    position: relative;
+    z-index: 2;
+}
+.header__logo_link{
+    text-decoration: none;
+}
+  .header__menu-ham{
+    font-size: 22px;
+    transform: translateX(-15px);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+  .header__menu-ham:hover {
+    transform: translateX(-15px) scale(1.1);
+    transition: transform 200ms ease;
+}
+  .header__nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 100px 20px 40px;
+    width: 100%;
+    height: 100vh;
+    transition: transform 500ms ease ;
+    box-shadow: 0 0 10px #0005;
+}  
+.header__nav--close {
+    transform: translateX(103%);
+    transition: transform 500ms ease;
+}
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+.header__navlink {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px auto;
+    text-align: center;
+    cursor: pointer;
+}
+  .header__navlink:hover {
+    background-color: #FF7431;
+}
+  .active-link{
+    font-weight: 700;
+    color: var(--color-red);
+}
+  @media screen and (min-width: 720px) {
+    .header {
+        padding: 0 0 0 30px;
+        border-bottom: 1px solid #ccc9;
+    }
+    .header__logo {
+        font-size: 20px;
+    }
+    .header__menu-ham{
+        display: none;
+    }
+    .header__nav {
+        transform: translateX(0);
+        transition: none;
+        position: initial;
+        padding: 0;
+        box-shadow: none;
+        width: initial;
+        height: initial;
+        background-color: #1c0030;
+    }
+    .header__list {
+        flex-direction: row;
+        gap: 0;
+    }
+    .header__navlink {
+        width: 15vw;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #ccc9;
+        background-color: #1c0030;
+    }
+    .header__item:last-child .header__navlink {
+        border-right: 1px solid #ccc9;
+
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+/*.header{
     border-bottom: 0px solid ;
     display: flex;
     justify-content: space-between; 
@@ -8,11 +123,12 @@
     height: 80px;
     top: 0;
     left: 0;    
+    background-color: #1c0030;
 }
 .header__logo{
     margin-left: 30px;  
-    color:#ff7431;
     padding: 20px;
+    color:#ff7431;
     text-decoration: none;
 }
 .header__nav{

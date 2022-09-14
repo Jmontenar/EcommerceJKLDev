@@ -3,7 +3,8 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getProductsByCategory } from '../../store/slices/product.slice'
+import { getAllProducts, getProductsByCategory } from '../../store/slices/product.slice'
+import './CategoryFilter.css'
 
 const CategoryFilter = () => {
 
@@ -14,22 +15,22 @@ const CategoryFilter = () => {
         .then(res =>setCategories(res.data.data.categories))
         .catch(err=>console.log(err))
     }, [])
-    console.log(categories)
-
+    
     const dispatch = useDispatch()
-
     const handleClickCategory = id => {
         dispatch(getProductsByCategory(id))
     }
-    
-    const products = useSelector(state => state.products)
-    console.log(products)
+    const handleClickAllproducts = () =>{
+        dispatch(getAllProducts())
+    }
+
 
   return (
-    <div>
-        <h2>Category</h2>
-        <ul>
-        <li>All Products</li>
+    <div className='filter__container'>
+        <h2 className='filter__title'>Category</h2>
+        <br></br>
+        <ul className='filter__list__items'>
+        <li onClick={handleClickAllproducts}>All Products</li>
         {
             categories?.map(category => (
                 <li onClick={() =>{handleClickCategory(category.id)}} key={category.id}>{category.name}</li>

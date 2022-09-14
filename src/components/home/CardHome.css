@@ -9,8 +9,7 @@
    overflow: hidden;
    border-top: 1px solid rgba(255,255,255,0.5);
    border-left: 1px solid rgba(255,255,255,0.5);
-   backdrop-filter: blur(5px);
-   background-color: #7c4bd2;
+   backdrop-filter: blur(5px); 
 }
 .card-container{
    transition: 0.5s;

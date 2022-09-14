@@ -1,4 +1,6 @@
 import React from 'react'
+import './InputSearch.css'
+
 
 
 
@@ -8,8 +10,8 @@ const InputSearch = ({setInputSearch}) => {
   }
 
   return (
-    <div>
-      <input onChange={handleChange} type="text" />
+    <div className='input__container'>
+      <input className='input' onChange={handleChange}  type="text" placeholder='Search' />
     </div>
   )
 }

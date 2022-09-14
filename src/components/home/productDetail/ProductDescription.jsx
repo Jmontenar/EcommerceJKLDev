@@ -38,9 +38,9 @@ const handleAddCart = () =>{
             <article className="product-info_quantity">
                 <h3 className="product-info_quantity_label">Quantity</h3>
                 <div className="product-info_quantity_">
-                    <button onClick={handleMinus}>-</button>
+                    <button className="product-info_btn" onClick={handleMinus}>-</button>
                     <div>{counter}</div>
-                    <button onClick={handlePlus}>+</button>
+                    <button className="product-info_btn" onClick={handlePlus}>+</button>
                 </div>
             </article>
                 <button onClick={handleAddCart} className="product-info_add">Add to cart<i className="fa-solid fa-cart-shopping"></i></button>

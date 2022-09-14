@@ -1,4 +1,10 @@
 .footer__container{
-    border: solid;
+    background-color: #1c0030;
+    color: #FF7431;
+}
+
+.footer__linkedin>img{
+    width: 40px;
+    height: 40px;
     
 }

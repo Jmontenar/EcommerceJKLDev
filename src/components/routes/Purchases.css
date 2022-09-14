@@ -1,7 +1,6 @@
 .purchase{
-    background-color: blueviolet;
-    margin-top: 80px;
     display: flex; 
+    
 }
 .purchase_container{
     display: flex;

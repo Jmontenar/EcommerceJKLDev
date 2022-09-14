@@ -1,0 +1,16 @@
+.filter__container{
+    width: 20em;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.filter__list__items{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+    
+}
+.filter__list__items>li{
+    cursor: pointer;
+    margin-bottom: 15px;
+}
