@@ -1,4 +1,5 @@
 import React from 'react'
+import './ProductPurchase.css'
 
 const ProductPurchase = ({product}) => {
 console.log(product)

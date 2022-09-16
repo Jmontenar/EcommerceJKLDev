@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import getConfig from '../../../utils/getConfig'
 import './ProductDescription.css'
 
@@ -25,11 +26,17 @@ const handleAddCart = () =>{
 }
 
   return (
-    <div className="description__container">
-    <section className="product-info">
+        <section className="product-info">
+        <div className="product_home">
+            <NavLink className="product__info_link"  to="/">
+            <ul><li>Home</li></ul>
+            </NavLink>
         <h2 className="product-info-name">{productInfo?.title}</h2>
-        <article className="product-info-img"><img src={productInfo?.productImgs[0]} alt='' /> </article>
+        </div>
+        <div className="product_img_description">
+        <article className="product-info-img"><img src={productInfo?.productImgs[0]} alt='' /> </article>        
         <p className="product-info-description">{productInfo?.description}</p>
+        </div>
         <div className="product-info-body">
             <article className="product-info-price">
                 <h3 className="product-info-price-label">Price</h3>
@@ -37,7 +44,7 @@ const handleAddCart = () =>{
             </article>
             <article className="product-info_quantity">
                 <h3 className="product-info_quantity_label">Quantity</h3>
-                <div className="product-info_quantity_">
+                <div className="product-info__quantity-product">
                     <button className="product-info_btn" onClick={handleMinus}>-</button>
                     <div>{counter}</div>
                     <button className="product-info_btn" onClick={handlePlus}>+</button>
@@ -46,7 +53,6 @@ const handleAddCart = () =>{
                 <button onClick={handleAddCart} className="product-info_add">Add to cart<i className="fa-solid fa-cart-shopping"></i></button>
         </div>
     </section>
-    </div>
   )
 }
 

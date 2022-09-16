@@ -27,14 +27,14 @@ const FormLogin = () => {
         <section className='label__container'>
         <div className='login__e-mail'>
             <label className='login__label' htmlFor='email'>Email:</label>
-            <input {...register('email')} type='email' id='email' />
+            <input className='login__email' {...register('email')} type='email' id='email' />
         </div>
         <div className='login__password'>
             <label className='login__label' htmlFor='password'>Password:</label>
-            <input {...register('password')} type='password' id='password' />
+            <input className='login__password_' {...register('password')} type='password' id='password' />
         </div>
         </section>
-        <div className="login__button"><button>Login</button></div>
+        <div className='login_btn_container'><button className="login__btn">Login</button></div>
     </form>
     </div>
   )

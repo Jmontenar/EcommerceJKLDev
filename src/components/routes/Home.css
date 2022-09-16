@@ -2,10 +2,20 @@
     display: flex;
     flex-wrap: wrap;  
     justify-content: flex-end; 
-    gap: -20px;
-    position: relative;
-    margin-top: -190px;
+    margin-top: -400px;
+    margin-left: 360px;
+}
+
+@media screen and (min-width: 720px) {
+    .home__container-card{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: flex-end; 
+    margin-top: -310px;
+    margin-left: 360px;
+    }   
 
 }
+
 
 

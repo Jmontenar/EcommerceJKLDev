@@ -4,6 +4,7 @@ import "./PurchaseCard.css";
 
 export const PurchaseCard = ({ purchase }) => {
   return (
+    <section className="card_purchase_container">
     <article className="card_purchase">
       <h3 className="card_purchase_date">{purchase.createdAt}</h3>
       <ul className="card_purchase_body">
@@ -12,5 +13,6 @@ export const PurchaseCard = ({ purchase }) => {
         ))}
       </ul>
     </article>
+    </section>
   );
 };

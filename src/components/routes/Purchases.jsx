@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import getConfig from "../../utils/getConfig";
 import { PurchaseCard } from "../purchases/PurchaseCard";
+import LoadingPurchasaes from "./LoadingPurchasaes";
 import './Purchases.css'
 
 
@@ -14,7 +15,14 @@ const Purchases = () => {
       .then((res) => setPurchases(res.data.data.purchases))
       .catch((err) => console.log(err));
   }, []);
+  const [isLoadingPurchases, setisLoadingPurchases] = useState(true)
+  useEffect(() => {
+    setisLoadingPurchases(false)
+    }, [])
 
+if(isLoadingPurchases){
+  return <LoadingPurchasaes />
+  }else{
   return (
     <div className="purchase">
       <h2 className="purchase_title">Purchases</h2>
@@ -28,5 +36,5 @@ const Purchases = () => {
     </div>
   );
 };
-
+}
 export default Purchases;
