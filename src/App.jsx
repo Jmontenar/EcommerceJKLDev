@@ -22,6 +22,7 @@ dispatch(getAllProducts())
   return (
     <div className='App'>
     <Header />
+    <div className="App2">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
@@ -31,6 +32,7 @@ dispatch(getAllProducts())
       <Route path="/cart" element={<Cart />} />
     </Route>
     </Routes>
+    </div>
     <Footer />
     </div>
   )

@@ -1,9 +1,8 @@
 .home__container-card{
     display: flex;
-    flex-wrap: wrap;  
-    justify-content: flex-end; 
-    margin-top: -400px;
-    margin-left: 360px;
+    flex-wrap: wrap; 
+    justify-content: center;   
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 720px) {

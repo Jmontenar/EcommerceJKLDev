@@ -1,6 +1,6 @@
 .Filter__price__container{
     width: 20em;
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
 }

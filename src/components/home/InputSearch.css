@@ -1,9 +1,9 @@
 .input__container{
     display: flex;
     align-items: stretch;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: -350px;
+    /*justify-content: center;*/
+    margin-left: 10px;
+    
 }
 .input{
     width: 240px;
